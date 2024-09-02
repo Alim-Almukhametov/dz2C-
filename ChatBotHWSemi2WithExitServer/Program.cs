@@ -8,9 +8,10 @@ namespace ChatBotHWSemi2WithExitServer
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            Server.ServerStartInThread();
+            
+           await Server.GetMessage();
         }
     }
 }
